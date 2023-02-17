@@ -15,7 +15,8 @@ namespace Prime.UnitTests.Services
 
         [Theory]
         [InlineData(10, "2,3,5,7")]
-        public void GeneratePrimes_PrimesUpto10AreCorrect(int range, string expected )
+        [InlineData(20, "2,3,5,7,11,13,17,19")]
+        public void GeneratePrimes_PrimesAreCorrect(int range, string expected )
         {
             var result = _primeService.GeneratePrimes(range);
             var actual = string.Join(",", result);
