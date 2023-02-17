@@ -22,6 +22,5 @@ namespace Prime.UnitTests.Services
 
             Assert.Equal(expected, actual);
         }
- 
     }
 }
